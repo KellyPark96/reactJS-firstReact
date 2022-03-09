@@ -1,10 +1,12 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import App from "./App";
+import Button from "./Button";
+import styles from "./App.module.css";
 
-ReactDOM.render(
-	<React.StrictMode>
-		<App />
-	</React.StrictMode>,
-	document.getElementById("root")
-);
+function App() {
+	return (
+		<div>
+			<h1 className={styles.title}>Welcome back!</h1>
+			<Button text={"Continue"}></Button>
+		</div>
+	);
+}
+export default App;
