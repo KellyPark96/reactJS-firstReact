@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 
 function App() {
 	const [counter, setValue] = useState(0);
-	const [keyword, setKeyword] = useState("");
+	const [keyword, setKeyword] = useState(" ");
 	const onClick = () => setValue((prev) => prev + 1);
 	const onChange = (event) => setKeyword(event.target.value);
 	console.log("I run all the time");
