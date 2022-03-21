@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 function DetailMovie({
 	cover_image,
@@ -11,6 +12,9 @@ function DetailMovie({
 }) {
 	return (
 		<div>
+			<h2>
+				<Link to="/">Back to Main</Link>
+			</h2>
 			<img src={cover_image} alt={title} />
 			<h1>{title}</h1>
 			<h3>
