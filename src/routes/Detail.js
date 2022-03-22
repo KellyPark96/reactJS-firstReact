@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useCallback, useEffect, useState } from "react";
 import DetailMovie from "../components/DetailMovie";
+import styles from "./Detail.module.css";
 
 function Detail() {
 	const { id } = useParams(); // url을 동적으로 만들어줄 id
@@ -23,7 +24,9 @@ function Detail() {
 	return (
 		<div>
 			{loading ? (
-				<h1>Loading...</h1>
+				<div className={styles.loader}>
+					<span>Loading...</span>
+				</div>
 			) : (
 				<div>
 					<DetailMovie
