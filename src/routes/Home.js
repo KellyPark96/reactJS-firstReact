@@ -1,6 +1,10 @@
 import { useEffect, useState } from "react";
-import Movie from "../components/Movie";
+// import { Link } from "react-router-dom";
+import Loading from "../components/Loading";
 import styles from "./Home.module.css";
+import Movie from "../components/Movie";
+// import Slide from "../components/Slide";
+// import navList from "../atom/NavList";
 
 function Home() {
 	const [loading, setLoading] = useState(true);
@@ -20,9 +24,7 @@ function Home() {
 	return (
 		<div className={styles.container}>
 			{loading ? (
-				<div className={styles.loader}>
-					<span>Loading...</span>
-				</div>
+				<Loading />
 			) : (
 				<div className={styles.movies}>
 					{movies.map((movie) => (
