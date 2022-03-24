@@ -44,12 +44,12 @@
 /* 
   .option__list li a {
     
-    color: var(--green-color-1);
+    color: var(--color-1);
   }
   
   .option__list li a:hover {
     cursor: pointer;
-    color: var(--green-color-2);
+    color: var(--color-2);
   }
 */
 
